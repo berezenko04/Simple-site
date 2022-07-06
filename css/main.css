@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+    width: 1171px;
+    margin: 0 auto;
+}
+
+header {
+    background: rgba(78, 192, 254, 1);
+    background: -moz-linear-gradient(-45deg, rgba(78, 192, 254, 1) 0%, rgba(55, 144, 217, 1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(78, 192, 254, 1)), color-stop(100%, rgba(55, 144, 217, 1)));
+    background: -webkit-linear-gradient(-45deg, rgba(78, 192, 254, 1) 0%, rgba(55, 144, 217, 1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(78, 192, 254, 1) 0%, rgba(55, 144, 217, 1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(78, 192, 254, 1) 0%, rgba(55, 144, 217, 1) 100%);
+    background: linear-gradient(135deg, rgba(78, 192, 254, 1) 0%, rgba(55, 144, 217, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4ec0fe', endColorstr='#3790d9', GradientType=1);
+    color: #fff;
+    padding-bottom: 210px;
+}
+
+.logo {
+    margin-top: 61px;
+}
+
+.offer {
+    margin-top: 143px;
+}
+
+.title {
+    font-size: 37px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+span {
+    font-size: 59px;
+}
+
+.text {
+    margin-top: 51px;
+    font-size: 16px;
+    line-height: 1.6em;
+    width: 385px;
+}
+
+.btn {
+    display: block;
+    background-color: #ffd429;
+    width: 218px;
+    margin-top: 45px;
+    text-decoration: none;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+    transition: all 0.5s ease;
+    font-weight: 700;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+
+.btn:hover {
+    background-color: #fddd5f;
+}
+
+.travel__img {
+    margin-top: 45px;
+}
+
+.learn {
+    padding-top: 108px;
+    padding-bottom: 120px;
+}
+
+.travels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 72px;
+}
+
+.travel {
+    width: 320px;
+    background: url(../img/icon1.png) no-repeat center top;
+    padding-top: 85px;
+    text-align: center;
+}
+
+.travel-title {
+    font-size: 19px;
+}
+
+.travel-text {
+    font-size: 15px;
+    margin-top: 18px;
+}
+
+.travel__shiny {
+    width: 260px;
+    background: url(../img/icon2.png) no-repeat center top;
+}
+
+.travel__summary {
+    background: url(../img/icon3.png) no-repeat center top;
+}
+
+.form {
+    background-color: #ecf3f8;
+    padding-bottom: 100px;
+}
+
+.form__title {
+    padding-top: 105px;
+    padding-bottom: 60px;
+}
+
+.form__ticket {
+    text-align: center;
+}
+
+.wrap {
+    margin-bottom: 20px;
+}
+
+.submit__btn {
+    display: block;
+    background-color: #ffd429;
+    width: 343px;
+    padding: 20px 0;
+    text-align: center;
+    transition: all 0.5s ease;
+    font-weight: 700;
+    border: 0;
+    margin: 14 auto;
+}
+
+.submit__btn:hover {
+    background-color: #fddd5f;
+    cursor: pointer;
+}
+
+input {
+    width: 343px;
+    margin: 10 auto;
+    padding: 12px 25px;
+    border-radius: 3px;
+    border: 1px gray solid;
+}
+
+.footer {
+    background-color: #164d7a;
+}
+
+.footer__text {
+    padding: 64px 0 64px;
+    text-align: center;
+    color: #fff;
+}
+
+
+/*Responsive*/
+
+/* 992px - 1200px*/
+@media screen and (max-width:1200px) {
+    .container {
+        width: 960px;
+    }
+
+    header {
+        padding-bottom: 75px;
+    }
+
+    .learn {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+}
+
+/*768px - 992px*/
+@media screen and (max-width:992px) {
+    .container {
+        width: 720px;
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .offer {
+        width: 100%;
+    }
+
+    .text {
+        width: 100%;
+    }
+
+    .travel__img {
+        display: block;
+        width: 641px;
+        margin: 45px auto 0;
+    }
+
+    .travels {
+        flex-direction: column;
+    }
+
+    .travel {
+        width: auto;
+        margin-bottom: 40px;
+    }
+}
+
+/*576px - 768px*/
+@media screen and (max-width:768px) {
+    .container {
+        width: 540px;
+    }
+
+    .travel__img {
+        width: 90%;
+    }
+}
+
+/*320px - 576px*/
+@media screen and (max-width:576px) {
+    .container {
+        width: auto;
+    }
+
+    input{
+        width: 90%;
+    }
+
+    .submit__btn{
+        width: 90%;
+    }
+
+}
